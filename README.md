@@ -12,3 +12,7 @@ This was made using [trace.moe API](https://soruly.github.io/trace.moe-api/#/?id
 npm install
 npm run dev
 ```
+
+## Todo
+- [ ]  Store an image in the database.
+- [x]  Accepting URL.
