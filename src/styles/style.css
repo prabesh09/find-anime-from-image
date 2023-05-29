@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+.main-container{
+    @apply h-screen
+}
+
+.main-container div{
+    @apply absolute bottom-0 bg-[#8C52FF] h-[50vh] w-full
+}
+
+.input-container{
+    @apply absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] outline-dashed outline-2 -outline-offset-[7px]
+    bg-gray-100 h-[25rem] aspect-video rounded-3xl shadow-lg shadow-gray-700 text-center
+    max-md:h-[17rem]
+    max-sm:h-[11rem]
+}
+
+.input-container img{
+    @apply h-3/4 m-auto
+}
+
+.input-text{
+    @apply text-2xl
+}
+
+.input-text span{
+    @apply text-[#8C52FF] cursor-pointer
+}
+
+.file-name{
+    @apply py-1
+}
+
+.input-box{
+    @apply hidden
+}
+
+.url-container{
+    @apply absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] flex justify-between items-center text-5xl
+    bg-gray-100 h-[5rem] aspect-[7/1] rounded-3xl shadow-lg shadow-gray-700 text-center overflow-hidden p-3
+    max-sm:h-[3rem] max-sm:text-2xl max-sm:rounded-lg
+}
+
+.url-container input{
+    @apply w-full h-full bg-transparent text-slate-500 outline-none text-2xl max-sm:text-lg
+}
+
+.content-container{
+    @apply bg-slate-400 p-2 flex flex-wrap justify-between max-lg:justify-around
+}
+
+.content-card{
+    @apply m-4 bg-slate-200 p-3 rounded-xl text-left shadow-sm shadow-black w-1/4 max-lg:w-[40%] max-sm:w-full
+    h-[25rem] flex flex-col justify-between max-[775px]:h-[27rem]
+}
+
+.content-card img{
+    @apply m-auto rounded-lg shadow-sm shadow-black aspect-video w-[100%] max-sm:w-[80%]
+}
+
+.content-info span{
+    @apply font-bold
+}
